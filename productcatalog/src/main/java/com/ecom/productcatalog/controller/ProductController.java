@@ -1,0 +1,33 @@
+package com.ecom.productcatalog.controller;
+
+
+import com.ecom.productcatalog.model.Product;
+import com.ecom.productcatalog.service.ProductService;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@CrossOrigin(origins = "http://localhost:5173")
+@RestController
+@RequestMapping("/api/products")
+public class ProductController {
+
+    private final ProductService productService;
+
+    public ProductController(ProductService productService) {
+       this.productService = productService;
+   }
+
+   @GetMapping("/get")
+   public List<Product> getAllProduct(){
+        return productService.getAllproducts();
+   }
+
+    @GetMapping("/category/{categoryId}")
+    public List<Product> getAllProductByCategory(Long categoryId){
+        return productService.getProductByCategory(categoryId);
+    }
+}
