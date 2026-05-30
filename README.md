@@ -42,7 +42,7 @@ Users can browse, add, update, and filter products through a responsive UI power
 ### Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/product-catalog.git
+git clone https://github.com/beherachinmay/product-catalog.git
 
 # Navigate to backend
 cd backend
