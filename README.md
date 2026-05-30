@@ -4,7 +4,7 @@ A simple Product Catalog application built using Java Spring Boot and React.
 This project allows users to manage and view products with a responsive frontend and RESTful backend services.
 
 ---
-
+# Tech Stack: Java, Spring Boot, Spring Data JPA, MySQL, React.js, REST API
 ## Features
 
 - Add new products
