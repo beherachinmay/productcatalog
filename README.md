@@ -63,9 +63,14 @@ npm install
 npm start
 ```
 
----
-
 ## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
+
+<sub>
+
+```
 product-catalog/
 ├── backend/
 │   ├── src/main/java/
@@ -75,12 +80,15 @@ product-catalog/
 │   │   └── model/
 │   └── application.properties
 └── frontend/
-├── src/
-│   ├── components/
-│   └── App.js
-└── package.json
+    ├── src/
+    │   ├── components/
+    │   └── App.js
+    └── package.json
+```
 
----
+</sub>
+
+</details>
 
 ## 📬 API Endpoints
 
